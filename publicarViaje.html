@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carpool App - Inicio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('fondo.jpg');
+      background-size: cover;   
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #10de99;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+
+      .btn-principal {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+      }
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1{
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: 700;
+
+    }
+
+    h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input:hover, select:hover{
+      border: 2px solid #27ae60;;
+    }
+
+    button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2ecc71;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ViajaJunto</h1>
+    <nav>
+      <a href="homeCentral.html">Inicio</a>
+      <a href="buscarViaje.html">Buscar Viaje</a>
+      <a href="publicarViaje.html">Publicar Viaje</a>
+      <a href="perfil.html">Mi Perfil</a>
+      <a href="login.html">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Publicar un Viaje</h2>
+    <form action="homeCentral.html">
+      <label for="origen">Ciudad de Origen:</label>
+      <select id="origen" name="origen">
+        <option value="">Selecciona una ciudad</option>
+        <option value="casablanca">Casablanca</option>
+        <option value="valparaiso">Valparaíso</option>
+        <option value="santiago">Santiago</option>
+        <option value="vina">Quillota</option>
+      </select>
+
+
+      <label for="origen">Ciudad de Destino:</label>
+      <select id="origen" name="origen">
+        <option value="">Selecciona una ciudad</option>
+        <option value="casablanca">Casablanca</option>
+        <option value="valparaiso">Valparaíso</option>
+        <option value="santiago">Santiago</option>
+        <option value="vina">Quillota</option>
+      </select>
+      <label>Fecha y hora:</label>
+      <input type="datetime-local">
+
+      <label>Asientos disponibles:</label>
+      <input type="number" min="1" max="10">
+
+      <label>Precio por pasajero ($CLP):</label>
+      <input type="number" min="0">
+
+      <button type="submit">Publicar</button>
+
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Perfil - ComparteTuViaje</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('fondo.jpg');
+      background-size: cover;   
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #2c3e50;
+      min-height: 100vh;
+      padding: 0;
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      color: #10de99;
+      font-size: 1.5rem;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .perfil-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 15px;
+      width: 350px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      margin: 2rem auto;
+    }
+    .perfil-container h2 {
+      margin-top: 0;
+      color: #10de99;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .perfil-dato {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .perfil-dato strong {
+      color: #10de99;
+    }
+    .conductor-status {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background-color: #10de99;
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .verificado {
+      margin-top: 0.5rem;
+      background-color: #36b9cc;
+      padding: 0.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+      }
+      nav a {
+        margin: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+      }
+      .perfil-container {
+        width: 90%;
+        margin: 1rem auto;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ComparteTuViaje</h1>
+    <nav>
+      <a href="homeCentral.html">Inicio</a>
+      <a href="buscarViaje.html">Buscar Viaje</a>
+      <a href="publicarViaje.html">Publicar Viaje</a>
+      <a href="perfil.html">Mi Perfil</a>
+      <a href="login.html">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <div class="perfil-container">
+    <h2>Mi Perfil</h2>
+    <div class="perfil-dato"><strong>Nombre:</strong> Juan Pérez</div>
+    <div class="perfil-dato"><strong>Correo:</strong> juan.perez@email.com</div>
+    <div class="perfil-dato"><strong>Teléfono:</strong> +56 9 1234 5678</div>
+
+    <div class="conductor-status">
+      <div class="verificado">Licencia verificada ✔️</div>
+    </div>
+  </div>
+</body>
+</html>

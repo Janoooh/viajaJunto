@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalle del Viaje - ComparteTuViaje</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('fondo.jpg');
+      background-size: cover;      /* Ajusta la imagen al tamaño de la pantalla */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat;
+      color: #2c3e50;
+      min-height: 100vh;
+      padding: 0;
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      color: #10de99;
+      font-size: 1.5rem;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      background: rgba(255, 255, 255, 0.95);
+      max-width: 600px;
+      margin: 2rem auto;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    h2 {
+      color: #10de99;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .viaje-info, .conductor-info, .accion-viaje {
+      margin-bottom: 1.5rem;
+    }
+    .viaje-info div, .conductor-info div {
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+    }
+    .label {
+      font-weight: 600;
+      color: #10de99;
+    }
+    .conductor-detalle {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .conductor-foto {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #10de99;
+    }
+    .conductor-datos {
+      flex: 1;
+    }
+    .calificacion {
+      color: #f39c12;
+      font-weight: 700;
+    }
+    .verificado {
+      background-color: #36b9cc;
+      color: white;
+      padding: 0.3rem 0.6rem;
+      border-radius: 8px;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 0.3rem;
+      font-size: 0.85rem;
+    }
+    .accion-viaje button {
+      background-color: #10de99;
+      border: none;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    .accion-viaje button:hover {
+      background-color: #0fc38a;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+      .conductor-foto {
+        width: 60px;
+        height: 60px;
+      }
+      .accion-viaje button {
+        padding: 0.85rem 1.5rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ComparteTuViaje</h1>
+    <nav>
+      <a href="homeCentral.html">Inicio</a>
+      <a href="buscarViaje.html">Buscar Viaje</a>
+      <a href="publicarViaje.html">Publicar Viaje</a>
+      <a href="perfil.html">Mi Perfil</a>
+      <a href="login.html">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Detalle del Viaje</h2>
+
+    <section class="viaje-info">
+      <div><span class="label">Origen:</span> Casablanca</div>
+      <div><span class="label">Destino:</span> Valparaíso</div>
+      <div><span class="label">Fecha:</span> 15 de junio, 2025</div>
+      <div><span class="label">Hora:</span> 08:30 AM</div>
+      <div><span class="label">Precio por asiento:</span> $5.000 CLP</div>
+      <div><span class="label">Asientos disponibles:</span> 3</div>
+    </section>
+
+    <section class="conductor-info">
+      <div class="label">Conductor</div>
+      <div class="conductor-detalle">
+        <img class="conductor-foto" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto conductor" />
+        <div class="conductor-datos">
+          <div><strong>Nombre:</strong> Juan Pérez</div>
+          <div class="calificacion">⭐ 4.8 (120 opiniones)</div>
+          <div class="verificado">Licencia verificada ✔️</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="accion-viaje">
+      <button>Solicitar unirse a este viaje</button>
+    </section>
+  </main>
+</body>
+</html>

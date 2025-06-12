@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - ComparteTuViaje</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('fondo.jpg');
+      background-size: cover;   
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 1rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #10de99;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 1rem;
+      border-radius: 15px;
+    }
+
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem auto;
+      padding: 0 1rem;
+    }
+
+    .btn-principal {
+      display: inline-block;
+      background-color: #10de99;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin: 0.25rem;
+    }
+
+    .btn-principal:hover {
+      background-color: #0fc38a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+
+      .btn-principal {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ViajaJunto</h1>
+    <nav>
+      <a href="homeCentral.html">Inicio</a>
+      <a href="buscarViaje.html">Buscar Viaje</a>
+      <a href="publicarViaje.html">Publicar Viaje</a>
+      <a href="perfil.html">Mi Perfil</a>
+      <a href="login.html">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Conecta personas y reduce el costo del viaje</h2>
+    <p>
+      Nuestra misión es transformar la forma en que nos movemos, volviendo el transporte más humano, económico y consciente.
+        Nos apasiona la sustentabilidad, la tecnología con propósito, y mejorar la calidad de vida en nuestras ciudades.
+        Queremos ser un puente entre vocación social, innovación tecnológica y regeneración urbana.
+
+        → Ser el "Uber local colaborativo" del futuro sustentable.
+    </p>
+    <a class="btn-principal" href="buscarViaje.html">Buscar un viaje</a>
+    <a class="btn-principal" href="publicarViaje.html">Publicar un viaje</a>
+  </section>
+
+</body>
+</html>
